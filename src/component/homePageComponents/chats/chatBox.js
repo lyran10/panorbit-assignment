@@ -5,6 +5,7 @@ import { Messages } from "./messages";
 export const Chatbox = ({ user, setUser }) => {
   return (
     <>
+
       {user !== "" ? ( // if empty string means no data in user so will display nothing
         <div className="absolute w-[200px] left-0 bottom-0 -translate-x-[250px]">
           <div className=" bg-[#362FD9]  min-h-[35px] rounded-t-lg flex justify-between items-center">
@@ -35,6 +36,7 @@ export const Chatbox = ({ user, setUser }) => {
           </div>
         </div>
       ) : null}
+      
     </>
   );
 };
