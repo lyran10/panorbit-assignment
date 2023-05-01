@@ -13,3 +13,5 @@ On the right you can see a box with acoount holder information and a list of all
 ![sign out](https://user-images.githubusercontent.com/101665844/235428042-4c9b21f6-5710-4352-9859-a5e1c3ee0f55.PNG)
 
 On the right bottom there are two boxes one which displays the users online, when clicked on any of the users will open another box with the data of the specific user which was clicked.
+
+![chats](https://user-images.githubusercontent.com/101665844/235428302-85a45f70-2cf2-4437-93fe-ee0440cbb775.PNG)
