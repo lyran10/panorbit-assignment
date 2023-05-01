@@ -14,7 +14,7 @@ export const Messages = () => {
       {messages.map((msg, index) => {
         // if its an even number align the message in the start if no align in the end
         return (
-          <p className={`${index % 2 === 0 ? "text-start" : "text-end"}`}>
+          <p key={index} className={`${index % 2 === 0 ? "text-start" : "text-end"}`}>
             <span className="text-white p-1 px-2 bg-[#362FD9] rounded-xl">
               {msg}
             </span>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { data } from "../../utils/data";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { BsFillChatRightFill } from "react-icons/bs";
@@ -8,6 +8,21 @@ export const UsersChatBox = () => {
   const [rotateArrow, setRotateArrow] = useState("rotate-0");
   const [show, setShow] = useState(false);
   const [user, setUser] = useState("");
+  let [usersOnline, setUsersOnline] = useState([]);
+
+  const handleOnlineArray = () => {
+    let numberArray = Object.keys([...Array(data.users.length)]); // making an array with length of the users
+    setUsersOnline(
+      numberArray.map((ele) => {
+        // replacing the elements with 0 and 1 (0 means offline  and 1 means online) check on line 72
+        return Math.floor(Math.random() * 2);
+      })
+    );
+  };
+
+  useEffect(() => {
+    handleOnlineArray(); // calling the function in use effect so that it will run once
+  }, []);
 
   // toggle the height opacity and arrow of the div which is on line 37 for some animation
   const handleClick = () => {
@@ -38,6 +53,7 @@ export const UsersChatBox = () => {
         } transition duration-500 justify-start overflow-scroll gap-2 border-l-2 border-r-2 border-[#362FD9] items-start p-1 text-[12px]`}
       >
         {data.users.map((ele, index) => {
+          let random = Math.floor(Math.random() * 2);
           return (
             // on click set the user with the data and send to chatBox component to show the data of the user with whom he wants to chat with
             <div
@@ -54,7 +70,11 @@ export const UsersChatBox = () => {
                 <span>{ele.name}</span>
               </div>
               {/* online sign */}
-              <span className="h-2 w-2 rounded-full bg-[#00A300]"></span>
+              <span
+                className={`h-2 w-2 rounded-full ${
+                  usersOnline[index] === 1 ? "bg-[#00A300]" : "bg-gray-200"
+                } `}
+              ></span>
             </div>
           );
         })}
