@@ -1,5 +1,10 @@
 # Panorbit Task
 
+Instructions to run the code
+1. Download a zip file (You file find in the code button on the top right)
+2. Extract it in the path you wish
+3. open in the editor and run npm start
+
 ## Created using React, Redux toolkit, React-icons, React-router-dom and for styling Tailwind 
 
 This is the main page with the accounts list, when clicked on any account it redirects to home page
