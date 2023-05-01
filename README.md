@@ -3,7 +3,8 @@
 Instructions to run the code
 1. Download a zip file (You will find in the code button on the top right)
 2. Extract it in the path you wish
-3. open in the editor and run npm start
+3. open in the editor and in the terminal run npm install
+4. Then npm start
 
 ## Created using React, Redux toolkit, React-icons, React-router-dom and for styling Tailwind 
 
