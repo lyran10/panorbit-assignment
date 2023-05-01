@@ -1,7 +1,7 @@
 # Panorbit Task
 
 Instructions to run the code
-1. Download a zip file (You file find in the code button on the top right)
+1. Download a zip file (You will find in the code button on the top right)
 2. Extract it in the path you wish
 3. open in the editor and run npm start
 
