@@ -1,5 +1,7 @@
 # Panorbit Task
 
+## Created using React, Redux toolkit, React-icons, React-router-dom and for styling Tailwind 
+
 This is the main page with the accounts list, when clicked on any account it redirects to home page
 
 ![main page](https://user-images.githubusercontent.com/101665844/235427535-b82eee2f-8eeb-4557-a457-c27c1dc4dbc7.PNG)
