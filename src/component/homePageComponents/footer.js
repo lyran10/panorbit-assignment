@@ -5,6 +5,7 @@ const footer = () => {
     <>
     <span>@</span>
     <footer>This is the footer</footer>
+    <footer>another footer</footer>
     <subfooter>This is the sub footer</subfooter>
     </>
   
