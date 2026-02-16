@@ -4,8 +4,9 @@ const footer = () => {
   return (
     <>
     <span>@</span>
-    <footer>footer</footer>
+    <footer>This is the footer</footer>
     </>
+  
   )
 }
 
